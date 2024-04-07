@@ -1,0 +1,117 @@
+* {
+	box-sizing: border-box;
+}
+
+#root {
+	width: 100vw;
+	height: 100vh;
+}
+
+.app-container {
+	display: flex;
+	height: 100vh;
+	width: 100%;
+	background-color: black;
+}
+
+.app-container .map-container {
+	width: 60%;
+	padding: 20px;
+}
+
+.app-container .map-container .map {
+	height: 100%;
+	width: 100%;
+	border-radius: 7px;
+}
+
+.app-container .sidebar {
+	width: 40%;
+	/* background-color: rgb(230, 230, 230); */
+	margin: 20px;
+	margin-left: 0px;
+	border-radius: 7px;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.sidebar-top {
+	background-color: rgb(230, 230, 230);
+	padding-bottom: 10px;
+	border-radius: 7px;
+}
+
+.button-interactions {
+	display: flex;
+	justify-content: space-between;
+}
+
+.button-interactions button {
+	font-size: 1.1vw;
+	width: 100%;
+	margin: 10px;
+	border: 1px solid #ddd; /* Add a border */
+	cursor: pointer; /* Indicate clickable button */
+}
+
+.marker-placement-toggle {
+	background-color: rgb(0, 110, 179);
+}
+
+.delete-marker {
+	background-color: rgb(20, 20, 20);
+}
+
+.clear-all {
+	text-align: center; /* Horizontally center the button */
+}
+
+.clear-all button {
+	width: 60%; /* Adjust width as needed */
+	background-color: red;
+	color: white;
+	cursor: pointer;
+}
+
+.input-container {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 5px;
+	margin-top: 10px;
+}
+
+.input-wrapper {
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center; /* Center items vertically */
+}
+
+.input-wrapper label {
+	font-size: 1.1vw;
+	color: black; /* Set label font color to black */
+}
+
+.input-wrapper input {
+	color: black; /* Set input text color to black */
+	width: 50px;
+	margin-left: 10px;
+	font-size: 1.1vw;
+	border: 1px solid black; /* Add black borders */
+	border-radius: 1px;
+	background-color: white; /* Set input background to white */
+}
+
+.input-wrapper.single {
+	width: 100%;
+}
+
+.graph-container {
+	margin-top: 20px;
+	width: 100%;
+	flex-grow: 1;
+	background-color: rgb(230, 230, 230);
+	border-radius: 7px;
+}
